@@ -125,7 +125,7 @@ cadena =`Introduce texto - FIN para salir`;
 
 let EXIT_WORD = "FIN";
 do{
-    cadena = Number(prompt(`${cadena}`));
+    cadena = prompt(`${cadena}`);
     console.log(cadena);
 }while(cadena === EXIT_WORD);
 
