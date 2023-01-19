@@ -145,6 +145,17 @@ do{
 // acabe cuando el usuario escriba 0 y nos muestre la suma total de los
 // números do-while
 //
+cadena =`Introduce numeros \n introduce 0 para salir`;
+console.log(cadena);
+let EXIT_NUMBER = 0;
+let acumulator = 0;
+let inputNumber = 0;
+do{
+    inputNumber = Number(prompt(`${cadena}`));
+    acumulator += inputNumber;
+}while(inputNumber === EXIT_NUMBER);
+console.log(acumulator);
+
 // 10.- Escribir un programa que nos muestre lo siguiente:
 //
 // 1
