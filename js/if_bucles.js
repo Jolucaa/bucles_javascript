@@ -117,8 +117,20 @@ console.log(totalSumOfDivisores);
 
 // 7.- Pedimos dos números al usuario y le decimos si los dos tienen la
 // misma paridad (o sea, si los dos son pares o los dos son impares) o
-// diferente. do-while
+// diferente.
 //
+cadena = "Introduce un numero";
+let firstInputNumber = Number(prompt(cadena));
+let secondtInputNumber = Number(prompt(cadena));
+
+let isParity = false;
+
+if((firstInputNumber % 2 || secondtInputNumber % 2) === 0 ) {
+    isParity = true;
+}
+
+cadena = `${firstInputNumber} y ${secondtInputNumber} tienen ${isParity ? "la misma" : "distinta"} paridad`;
+console.log(cadena);
 // 8.- Escribir un programa que le pida textos al usuario, los imprima por la consola, y acabe cuando el usuario escriba ‘FIN’ do-while
 //
 cadena =`Introduce texto - FIN para salir`;
@@ -144,3 +156,4 @@ do{
 // 4444
 //
 // 55555
+// 900 84 15 15 tlf cofi
